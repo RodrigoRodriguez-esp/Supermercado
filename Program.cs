@@ -38,5 +38,5 @@ app.MapGet("/api/supermercado",() =>
     });
 });
 
-var port = Environment.GetEnviromentVariable("Port")??"10000",
+var port = Environment.GetEnviromentVariable("Port")??"10000";
 app.Run($"http://0.0.0.0:(port)");
