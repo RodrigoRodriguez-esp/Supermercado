@@ -17,8 +17,8 @@ app.UseCors();
 
 var productos = new List<Producto>
 {
-    new(1, "LAC001", "Leche entera 1L",   "Lácteos",   4.50m,  40, "Gloria",        0,  "https://placehold.co/80x100?text=Leche",      "Leche entera en envase de 1 litro."),
-    new(2, "LAC002", "Yogurt fresa 1L",   "Lácteos",   6.80m,  8,  "Laive",         10, "https://placehold.co/80x100?text=Yogurt",     "Yogurt bebible sabor fresa."),
+    new(1, "LAC001", "Leche entera 1L",   "Lácteos",   4.50m,  40, "Gloria",        0,  "https://corporacionliderperu.com/50720-large_default/gloria-leche-tarro-azul-gde-x-390-gr.jpg",      "Leche entera en envase de 1 litro."),
+    new(2, "LAC002", "Yogurt fresa 1L",   "Lácteos",   6.80m,  8,  "Laive",         10, "https://plazavea.vteximg.com.br/arquivos/ids/34361308-418-418/20326319.jpg",     "Yogurt bebible sabor fresa."),
     new(3, "ABA001", "Arroz extra 1kg",   "Abarrotes", 4.20m,  80, "Costeño",       0,  "https://placehold.co/80x100?text=Arroz",      "Arroz extra de grano largo."),
     new(4, "ABA002", "Aceite vegetal 1L", "Abarrotes", 10.50m, 35, "Primor",        5,  "https://placehold.co/80x100?text=Aceite",     "Aceite vegetal para cocina."),
     new(5, "FRU001", "Manzana (kg)",      "Frutas",    5.50m,  50, "Fresco",        0,  "https://placehold.co/80x100?text=Manzana",    "Manzana roja por kilo."),
