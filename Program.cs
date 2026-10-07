@@ -37,6 +37,7 @@ app.MapGet("/api/supermercado", () => productos);
 app.MapGet("/api/supermercado/{id:int}", (int id) =>
 {
     var producto = productos.FirstOrDefault(p => p.Id == id);
+
     return producto is null
         ? Results.NotFound(new { message = "Producto no encontrado." })
         : Results.Ok(producto);
@@ -46,27 +47,32 @@ app.MapPost("/api/supermercado", (Producto datos) =>
 {
     var nuevo = datos with { Id = siguienteId++ };
     productos.Add(nuevo);
+
     return Results.Created($"/api/supermercado/{nuevo.Id}", nuevo);
 });
 
 app.MapPut("/api/supermercado/{id:int}", (int id, Producto datos) =>
 {
     var indice = productos.FindIndex(p => p.Id == id);
+
     if (indice < 0)
         return Results.NotFound(new { message = "Producto no encontrado." });
 
     var actualizado = datos with { Id = id };
     productos[indice] = actualizado;
+
     return Results.Ok(actualizado);
 });
 
 app.MapDelete("/api/supermercado/{id:int}", (int id) =>
 {
     var producto = productos.FirstOrDefault(p => p.Id == id);
+
     if (producto is null)
         return Results.NotFound(new { message = "Producto no encontrado." });
 
     productos.Remove(producto);
+
     return Results.NoContent();
 });
 
@@ -134,7 +140,11 @@ app.MapGet("/api/promociones/{id:int}", (int id) => {
     return promo is null ? Results.NotFound(new { message = "Promoción no encontrada" }) : Results.Ok(promo);
 });
 
-// ==================== MODELOS ====================
+// ==================== CONFIGURACIÓN DE PUERTO ====================
+var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
+app.Run($"http://0.0.0.0:{port}");
+
+// ==================== MODELOS (RECORDS) — SIEMPRE AL FINAL ====================
 record Producto(
     int Id,
     string Codigo,
@@ -153,7 +163,3 @@ record Cliente(int Id, string Nombre, string Dni, string Email, string Telefono)
 record Pedido(int Id, int ClienteId, DateTime Fecha, decimal Total, List<DetallePedido> Detalles);
 record DetallePedido(int ProductoId, string NombreProducto, int Cantidad, decimal PrecioUnitario);
 record Promocion(int Id, string Titulo, string Descripcion, int DescuentoPorcentaje, DateTime FechaInicio, DateTime FechaFin);
-
-// ==================== CONFIGURACIÓN DE PUERTO ====================
-var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
-app.Run($"http://0.0.0.0:{port}");
