@@ -18,7 +18,7 @@ app.UseCors();
 // ==================== PRODUCTOS ====================
 var productos = new List<Producto>
 {
-    new(1, "LAC001", "Leche entera 1L",   "Lácteos",   4.50m,  40, "Gloria",        0,  "https://placehold.co/80x100?text=Leche",      "Leche entera en envase de 1 litro."),
+    new(1, "LAC001", "Leche entera 1L",   "Lácteos",   4.50m,  40, "Gloria",        0,  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDPnlDEQz5U98aFqk5Ys2hnRaT9Uj7X9fRm-qEL5c9mbM1jn9Y0z97hI&s=10",      "Leche entera en envase de 1 litro."),
     new(2, "LAC002", "Yogurt fresa 1L",   "Lácteos",   6.80m,  8,  "Laive",         10, "https://placehold.co/80x100?text=Yogurt",     "Yogurt bebible sabor fresa."),
     new(3, "ABA001", "Arroz extra 1kg",   "Abarrotes", 4.20m,  80, "Costeño",       0,  "https://placehold.co/80x100?text=Arroz",      "Arroz extra de grano largo."),
     new(4, "ABA002", "Aceite vegetal 1L", "Abarrotes", 10.50m, 35, "Primor",        5,  "https://placehold.co/80x100?text=Aceite",     "Aceite vegetal para cocina."),
