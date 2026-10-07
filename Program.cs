@@ -20,12 +20,12 @@ var productos = new List<Producto>
 {
     new(1, "LAC001", "Leche entera 1L",   "Lácteos",   4.50m,  40, "Gloria",        0,  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDPnlDEQz5U98aFqk5Ys2hnRaT9Uj7X9fRm-qEL5c9mbM1jn9Y0z97hI&s=10",      "Leche entera en envase de 1 litro."),
     new(2, "LAC002", "Yogurt fresa 1L",   "Lácteos",   6.80m,  8,  "Laive",         10, "https://vegaperu.vtexassets.com/arquivos/ids/159174/7750151005548.jpg?v=637660223633330000",     "Yogurt bebible sabor fresa."),
-    new(3, "ABA001", "Arroz extra 1kg",   "Abarrotes", 4.20m,  80, "Costeño",       0,  "https://plazavea.vteximg.com.br/arquivos/ids/27552446-512-512/433778.jpg,      "Arroz extra de grano largo."),
+    new(3, "ABA001", "Arroz extra 1kg",   "Abarrotes", 4.20m,  80, "Costeño",       0,  "https://plazavea.vteximg.com.br/arquivos/ids/27552446-512-512/433778.jpg",      "Arroz extra de grano largo."),
     new(4, "ABA002", "Aceite vegetal 1L", "Abarrotes", 10.50m, 35, "Primor",        5,  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwB_OrMatGEJ1bAnLAnkN6luP1IMCyg3otjjUgL3I6yPYs1xT_T5GWZaxk&s=10",     "Aceite vegetal para cocina."),
     new(5, "FRU001", "Manzana (kg)",      "Frutas",    5.50m,  50, "Fresco",        0,  "https://www.shutterstock.com/shutterstock/photos/2088601369/display_1500/stock-photo-a-lot-of-apples-in-a-cardboard-box-image-of-fruit-delivery-2088601369.jpg",    "Manzana roja por kilo."),
     new(6, "BEB001", "Gaseosa 2L",        "Bebidas",   7.50m,  6,  "Inca Kola",     0,  "https://www.popeyes.com.pe/media/catalog/product/2/1/2146464550.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",    "Gaseosa de 2 litros."),
-    new(7, "CAR001", "Pollo entero (kg)", "Carnes",    11.90m, 20, "San Fernando",  0,  "https://placehold.co/80x100?text=Pollo",      "Pollo fresco por kilo."),
-    new(8, "LIM001", "Detergente 1kg",    "Limpieza",  12.90m, 30, "Bolívar",       15, "https://placehold.co/80x100?text=Detergente", "Detergente en polvo."),
+    new(7, "CAR001", "Pollo entero (kg)", "Carnes",    11.90m, 20, "San Fernando",  0,  "https://wongfood.vtexassets.com/arquivos/ids/711762-800-auto?v=638539510164570000&width=800&height=auto&aspect=true",      "Pollo fresco por kilo."),
+    new(8, "LIM001", "Detergente 1kg",    "Limpieza",  12.90m, 30, "Bolívar",       15, "https://promart.vteximg.com.br/arquivos/ids/8725249-1000-1000/130955.jpg?v=639214524475600000", "Detergente en polvo."),
 };
 
 var siguienteId = 9;
